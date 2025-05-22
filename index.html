@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Purify Cleaning Services offers professional and reliable cleaning solutions for homes and businesses. Our expert team ensures top-quality service and customer satisfaction.">
+    <meta name="keywords" content="cleaning services, home cleaning, office cleaning, professional cleaners, Purify Cleaning Services">
+    <meta name="author" content="Purify Cleaning Services">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Purify Cleaning Services">
+    <meta property="og:description" content="Professional and reliable cleaning solutions for homes and businesses. Expert team ensuring top-quality service and customer satisfaction.">
+    <meta property="og:image" content="URL_TO_AN_IMAGE_THAT_REPRESENTS_YOUR_SERVICE">
+    <meta property="og:url" content="YOUR_WEBSITE_URL">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Purify Cleaning Services">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Purify Cleaning Services">
+    <meta property="twitter:description" content="Professional cleaning services for homes and businesses. Reliable and top-quality service from our expert team.">
+    <meta property="twitter:image" content="URL_TO_AN_IMAGE_THAT_REPRESENTS_YOUR_SERVICE">
+    <meta property="twitter:url" content="YOUR_WEBSITE_URL">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>PURIFY CLEANING SERVICES</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <img src="images/ps_logo_full-removebg-preview.png" class="logo" alt="Purify Cleaning Services">
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About Us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-circle-fill"></i>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="video-container">
+                <video autoplay muted loop id="heroVideo">
+                    <source src="images/WhatsApp Video 2024-06-08 at 14.41.36.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="cta">
+                <h1>You Make The Mess, We Do The Rest!</h1>
+                <p class="purify">Where Cleanliness Meets Perfection!</p>
+                <p>Contact us for a free quote and let us purify your space with our exceptional cleaning services.</p>
+                <a href="https://wa.me/+254704084114?text=Hi!%20I%20am%20interested%20in%20Office%20Cleaning%20services.%20Can%20you%20please%20provide%20me%20with%20the%20pricing%20details?" target="_blank" class="btn btn-whatsapp">
+                    <i class="bi bi-whatsapp"></i> Contact Us for a Free Quote
+                </a>
+                <a href="tel:+0704084114" class="cta-button">Call Now: 0704084114</a>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section__title">Our Services</h2>
+                <ul class="row list-unstyled">
+                    <li class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/office cleaning.jpeg" alt="Office Cleaning" class="card-img-top service-image">
+                            <div class="card-body">
+                                <h5 class="card-title">Office Cleaning</h5>
+                                <p class="card-text">A pristine and organized workspace fosters a productive environment, enhances employee morale, and leaves a positive impression on clients.</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#officeCleaningModal">
+                                    Price Details
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/House cleaning.jpeg" alt="House Cleaning" class="card-img-top service-image">
+                            <div class="card-body">
+                                <h5 class="card-title">House Cleaning</h5>
+                                <p class="card-text">Our house cleaning services create a comfortable and hygienic home environment. From eliminating dust to maintaining a spotless living space, Purify ensures that your home is a haven for relaxation and well-being.</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#houseCleaningModal">
+                                    Price Details
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/post construction.jpeg" alt="Post-Construction Cleaning" class="card-img-top service-image">
+                            <div class="card-body">
+                                <h5 class="card-title">Post-Construction Cleaning</h5>
+                                <p class="card-text">After construction or renovation, debris and dust can linger. Purify's post-construction cleaning ensures a thorough cleanup, allowing you to enjoy your newly transformed space.</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#postConstructionCleaningModal">
+                                    Price Details
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/carpet cleaning.jpeg" alt="Carpet Cleaning" class="card-img-top service-image">
+                            <div class="card-body">
+                                <h5 class="card-title">Carpet Cleaning</h5>
+                                <p class="card-text">Regular carpet cleaning not only enhances the appearance of your space but also extends the life of your carpets.</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#carpetCleaningModal">
+                                    Price Details
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/fumigation.jpeg" alt="Fumigation" class="card-img-top service-image">
+                            <div class="card-body">
+                                <h5 class="card-title">Fumigation</h5>
+                                <p class="card-text">Regular fumigation prevents infestations, protects your health, and preserves your property. Pests can spread diseases and cause health damages, but professional fumigation ensures a safe and effective solution.</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fumigationModal">
+                                    Price Details
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/deep disinfection.jpeg" alt="Deep House Disinfection" class="card-img-top service-image">
+                            <div class="card-body">
+                                <h5 class="card-title">Deep House Disinfection</h5>
+                                <p class="card-text">In today's world, health and safety are paramount. Ensure a clean and sanitized living space for your family, minimizing the risk of infections.</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#deepDisinfectionModal">
+                                    Price Details
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/sofa cleaning.jpeg" alt="Sofa Cleaning" class="card-img-top service-image">
+                            <div class="card-body">
+                                <h5 class="card-title">Sofa Cleaning</h5>
+                                <p class="card-text">Revive Your Living Spaces with Professional Sofa Cleaning Services in Nairobi! Your sofa is more than just furniture – it's the centerpiece of your living room where cherished memories are made and relaxation begins.</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sofaCleaningModal">
+                                    Price Details
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Modals -->
+        
+        <!-- Office Cleaning Modal -->
+        <div class="modal fade" id="officeCleaningModal" tabindex="-1" role="dialog" aria-labelledby="officeCleaningModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="officeCleaningModalLabel">Office Cleaning Prices</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Price: Preferable site visit</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://wa.me/+254704084114?text=Hello%20Purify!%20I%20would%20like%20to%20inquire%20about%20office%20cleaning%20prices" target="_blank" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- House Cleaning Modal -->
+        <div class="modal fade" id="houseCleaningModal" tabindex="-1" role="dialog" aria-labelledby="houseCleaningModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="houseCleaningModalLabel">House Cleaning Prices</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Apartments:</h4>
+                        <p>Single Room: 2,000/=</p>
+                        <p>Bedsitter: 2,500/=</p>
+                        <p>1 Bedroom: 3,500/=</p>
+                        <p>2 Bedroom: 4,000/=</p>
+                        <p>3 Bedroom: 5,000/=</p>
+                        <p>4 Bedroom: 6,000/=</p>
+                        <h4>Maisonettes/Bungalows:</h4>
+                        <p>3 Bedroom: 6,000/=</p>
+                        <p>4 Bedroom: 7,000/=</p>
+                        <p>5 Bedroom: 7,500/=</p>
+                        <p>6 Bedroom: 8,500/=</p>
+                        <p>7 Bedroom: 9,500/=</p>
+                        <p>8 Bedroom: 10,500/=</p>
+                        <p>9 Bedroom: 11,500/=</p>
+                        <p>10 Bedroom: 12,500/=</p>
+                        <p>11 Bedroom: 13,500/=</p>
+                        <p>12 Bedroom: 14,500/=</p>
+                        <p>13 Bedroom: 15,500/=</p>
+                        <p><strong>Construction:</strong> Preferable site visit</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://wa.me/+254704084114?text=Hello%20Purify!%20I%20would%20like%20to%20inquire%20about%20house%20cleaning%20prices" target="_blank" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Post-Construction Cleaning Modal -->
+        <div class="modal fade" id="postConstructionCleaningModal" tabindex="-1" role="dialog" aria-labelledby="postConstructionCleaningModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="postConstructionCleaningModalLabel">Post-Construction Cleaning Prices</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Price: Preferable site visit</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://wa.me/+254704084114?text=Hello%20Purify!%20I%20would%20like%20to%20inquire%20about%20post-construction%20cleaning%20prices" target="_blank" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Carpet Cleaning Modal -->
+        <div class="modal fade" id="carpetCleaningModal" tabindex="-1" role="dialog" aria-labelledby="carpetCleaningModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="carpetCleaningModalLabel">Carpet Cleaning Prices</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Marts: 450/=</p>
+                        <p>5 by 8: 2,500/=</p>
+                        <p>6 by 9: 3,000/=</p>
+                        <p>8 by 11: 3,500/=</p>
+                        <p>(Preferable site visit)</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://wa.me/+254704084114?text=Hello%20Purify!%20I%20would%20like%20to%20inquire%20about%20carpet%20cleaning%20prices" target="_blank" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fumigation Modal -->
+        <div class="modal fade" id="fumigationModal" tabindex="-1" role="dialog" aria-labelledby="fumigationModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="fumigationModalLabel">Fumigation Prices</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Compound:</p>
+                        <p>½ acre: 16,800/=</p>
+                        <p>¼ acre: 12,800/=</p>
+                        <p>⅛ acre: 8,800/=</p>
+                        <p>Extra charges for rodents to snakes</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://wa.me/+254704084114?text=Hello%20Purify!%20I%20would%20like%20to%20inquire%20about%20fumigation%20prices" target="_blank" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Deep House Disinfection Modal -->
+        <div class="modal fade" id="deepDisinfectionModal" tabindex="-1" role="dialog" aria-labelledby="deepDisinfectionModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deepDisinfectionModalLabel">Deep House Disinfection Prices</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Price: Preferable site visit</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://wa.me/+254704084114?text=Hello%20Purify!%20I%20would%20like%20to%20inquire%20about%20deep%20house%20disinfection%20prices" target="_blank" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sofa Cleaning Modal -->
+        <div class="modal fade" id="sofaCleaningModal" tabindex="-1" role="dialog" aria-labelledby="sofaCleaningModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="sofaCleaningModalLabel">Sofa Cleaning Prices</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Price: Preferable site visit</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://wa.me/+254704084114?text=Hello%20Purify!%20I%20would%20like%20to%20inquire%20about%20sofa%20cleaning%20prices" target="_blank" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+
+        <section id="about" class="section">
+            <div class="about-general">
+                <h2 class="section__title">About Us</h2>
+                <p>Purify Cleaning Service is a premier cleaning company in Nairobi dedicated to delivering exceptional residential and commercial cleaning solutions. We have the experience and skills, and we've become a trusted name in the industry known for our meticulous attention to detail and unmatched customer satisfaction.</p>
+            </div>
+            <div class="about-general">
+                <h3 class="glossy-heading">Mission</h3>
+                <p>Our mission at Purify is to elevate the standard of cleanliness in both commercial and residential spaces. We strive to create healthier and more comfortable living and working environments for our clients by providing top-notch cleaning services tailored to their unique needs.</p>
+            </div>
+            <div class="about-general">
+                <h3 class="glossy-heading">Core Values</h3>
+                <ul>
+                    <li><strong>Excellence:</strong> We are committed to delivering cleaning services of the highest quality, ensuring our clients experience a noticeable difference.</li>
+                    <li><strong>Reliability:</strong> Purify is a name you can trust. We consistently meet and exceed expectations, delivering on our promises with punctuality and professionalism.</li>
+                    <li><strong>Customer-Centric:</strong> Our clients are at the heart of everything we do. We tailor our services to meet their specific requirements, providing personalized and attentive care.</li>
+                </ul>
+            </div>
+            <div class="about-general">
+                <h3 class="glossy-heading">Vision</h3>
+                <p>Our vision is to be the leading cleaning service provider in Nairobi, setting new standards for excellence and innovation in the industry. We aim to be the go-to choice for those seeking a clean, healthy, and vibrant living or working space.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section__title">Contact Us</h2>
+            <p>Phone: <a href="tel:+0704084114" class="phone_contact">0704084114</a></p>
+            <p>Email: <a href="mailto:purify2clean@gmail.com" class="email_contact">purify2clean@gmail.com</a></p>
+            <p>Address: Naivasha Rd, Corner Heights</p>
+            <form action="#" method="post" class="form-contact">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="map"></div>
+            <footer>
+                <p>&copy; 2024 Purify Cleaning Services. All rights reserved.</p>
+                <ul>
+                    <li><i class="fa-brands fa-facebook fb"></i><a href="https://www.facebook.com">Facebook</a></li>
+                    <li><i class="fa-brands fa-instagram ig"></i><a href="https://www.instagram.com">Instagram</a></li>
+                </ul>
+            </footer>
+        </section>
+
+        <script>
+
+            /* Toggle Menu */
+            const navMenu = document.getElementById('nav-menu'),
+                  navToggle = document.getElementById('nav-toggle'),
+                  navClose = document.getElementById('nav-close');
+
+            /* Show/Hide Menu */
+            if (navToggle) {
+                navToggle.addEventListener('click', () => {
+                    if (navMenu.classList.contains('show-menu')) {
+                        navMenu.classList.remove('show-menu');
+                        navClose.style.display = 'none';
+                    } else {
+                        navMenu.classList.add('show-menu');
+                        navClose.style.display = 'block';
+                    }
+                });
+            }
+
+            /* Hide Menu */
+            if (navClose) {
+                navClose.addEventListener('click', () => {
+                    navMenu.classList.remove('show-menu');
+                    navClose.style.display = 'none';
+                });
+            }
+
+            const navLink = document.querySelectorAll('.nav__link');
+
+            const linkAction = () => {
+                const navMenu = document.getElementById('nav-menu');
+                // When we click on each nav__link, we remove the show-menu class
+                navMenu.classList.remove('show-menu');
+                navClose.style.display = 'none';
+            };
+
+            navLink.forEach(n => n.addEventListener('click', linkAction));
+        </script>
+
+       
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@latest/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@latest/dist/confetti.browser.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.btn-whatsapp').forEach(button => {
+                button.addEventListener('click', () => {
+                    confetti({
+                        particleCount: 100,
+                        spread: 70,
+                        origin: { y: 0.6 }
+                    });
+                });
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        const name = document.getElementById('name');
+        const email = document.getElementById('email');
+        const phone = document.getElementById('phone');
+        const message = document.getElementById('message');
+        
+        // Add event listener to form container
+        const submit = document.querySelector('.form-contact');
+        
+        submit.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const nameValue = name.value;
+            const emailValue = email.value;
+            const phoneValue = phone.value;
+            const messageValue = message.value;
+        
+            // Email body formatted with form data
+            const emailBody = `
+                <strong>Name:</strong> ${nameValue}<br>
+                <strong>Email:</strong> ${emailValue}<br>
+                <strong>Phone Number:</strong> ${phoneValue}<br>
+                <strong>Message:</strong> <br>${messageValue}
+            `;
+        
+            // Send email
+            Email.send({
+                SecureToken: "181e52f7-f7c4-4b19-b3f5-23c95764994b",
+                To: 'purify2clean@gmail.com',
+                From: "purify2clean@gmail.com",
+                Subject: "New Contact Form Submission",
+                Body: emailBody
+            }).then(
+                message => alert("Email sent successfully!")
+            ).catch(
+                error => alert("Failed to send email: " + error)
+            );
+        });
+        </script>
+        
+
+  </script>
+            
+    </main>
+</body>
+</html>
